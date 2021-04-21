@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>07 - sync/async fetch</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="max-w-3xl mx-auto px-4 pb-8 border-solid border-1 border-gray-600 sm:px-6 xl:max-w-5xl xl:px-0">
+      <h1 class="text-2xl font-extrabold text-center py-10">
+        Sync/Async Fetch
+      </h1>
+      <div class="flex justify-center content-center">
+        <span id="clock" class="p-2">12:00:00 AM</span>
+        <span class="p-2 bg-purple-400 rounded animate-pulse">CSS Animation</span>
+      </div>
+      <div class="flex justify-center content-center mb-2 pb-2 border-b border-solid border-black">
+        <button id="prompt" class="border border-solid border-black p-2 m-2 rounded">Prompt</button>
+        <button id="fetch-sync" class="border border-solid border-black p-2 m-2 rounded">Fetch post (sync)</button>
+        <button id="fetch-callback" class="border border-solid border-black p-2 m-2 rounded">Fetch post (callback)</button>
+      </div>
+      <div id='blocks' class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+      </div>
+    </div>
+  </body>
+</html>
